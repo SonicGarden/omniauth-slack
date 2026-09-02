@@ -36,7 +36,7 @@ module OmniAuth
       
         attr_accessor :logger, :history, :subdomain
         
-        def initialize(*args, **options)
+        def initialize(*args)
           debug{"args: #{args}"}
           super
           self.logger = OmniAuth.logger
